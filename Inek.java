@@ -1,26 +1,27 @@
-package ciftci;
-import ciftlik.*;
+package ciftlik;
 
-public class ciftci
-{
 
-    public static void main(String[] args)
+public class Inek
+{  public static int  Sinek=0;
+    public String isim;
+    public Inek()
     {
-    Tavuk t1=new Tavuk();
-    System.out.println(t1.isim);
-    Inek i1=new Inek();
-    System.out.println(i1.isim);
-    Tavuk t2=new Tavuk("ali");
-    System.out.println(t2.isim);
-    Inek i2=new Inek("veli");
-    System.out.println(i2.isim);
-    Inek i3=new Inek("ahmet");
-    System.out.println(i2.isim);
-    Inek i4=new Inek("ahmet");
-    System.out.println(i4.isim);
-        System.out.println("Tavuk sayısı.......:"+Tavuk.Stavuk);
-        System.out.println("İnek sayısı.......:"+Inek.Sinek);
-    System.out.println("Hayvan sayısı.......:"+Tavuk.topla());
+        Sinek++;
+        isim="inek";
+        topla();
+        isim=isim+ Sinek;
+    }
+    public Inek(String isim)
+    {
+        Sinek++;
+        topla();
+        this.isim=isim+ Sinek;
+    }
+    public static int topla(){
 
+        return Tavuk.Stavuk+Inek.Sinek;
+
+    }
 }
-}
+
+
