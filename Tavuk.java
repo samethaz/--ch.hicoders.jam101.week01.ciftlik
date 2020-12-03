@@ -2,7 +2,7 @@ package ciftlik;
 
 
 public class Tavuk
-{   static int  Stavuk=0;
+{   public static int  Stavuk=0;
     public String isim;
     public Tavuk()
     {
