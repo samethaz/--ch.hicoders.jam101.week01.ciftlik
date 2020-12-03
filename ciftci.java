@@ -18,7 +18,9 @@ public class ciftci
     System.out.println(i2.isim);
     Inek i4=new Inek("ahmet");
     System.out.println(i4.isim);
-    System.out.print("Hayvan sayısı.......:"+Tavuk.topla());
+        System.out.println("Tavuk sayısı.......:"+Tavuk.Stavuk);
+        System.out.println("İnek sayısı.......:"+Inek.Sinek);
+    System.out.println("Hayvan sayısı.......:"+Tavuk.topla());
 
 }
 }
